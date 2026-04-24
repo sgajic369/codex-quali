@@ -48,7 +48,7 @@ def place_zoey():
 
 def on_mouse_down(pos):
     if img.collidepoint(pos):
-        sounds.eep.play()
+        sounds.boom.play()
         print("Good shot!") 
         place_zoey()
     else:
