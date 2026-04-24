@@ -1,6 +1,6 @@
 from random import randint
 
-img = Actor("ZoeyLoL")
+img = Actor("zoeylol")
 
 def draw():
     screen.clear()
