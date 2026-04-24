@@ -18,10 +18,10 @@ def place_zoey():
 
 def on_mouse_down(pos):
     if img.collidepoint(pos):
-        print("Good shot!") [cite: 5]
+        print("Good shot!") 
         place_zoey()
     else:
-        print("You missed!") [cite: 5]
+        print("You missed!") 
         quit()
 
 place_zoey()
