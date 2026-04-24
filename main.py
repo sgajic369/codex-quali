@@ -1,5 +1,8 @@
 from random import randint
 
+WIDTH = 1920
+HEIGHT = 1080
+
 img = Actor("zoeylol")
 
 def draw():
@@ -7,8 +10,9 @@ def draw():
     img.draw()
 
 def place_zoey():
-    img.x = randint(10, 800)
-    img.y = randint(10, 600)
+    img.x = randint(100, WIDTH - 100)
+    img.y = randint(100, HEIGHT - 100)
+    animate(img, tween='bounce_end', duration=0.5, y=img.y + 20)
 
 def on_mouse_down(pos):
     if img.collidepoint(pos):
